@@ -18,9 +18,9 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleW
 
 
 
-def indonesia():
+def japan():
     global page
-    res = requests.get('https://www.insecam.org/en/bycountry/ID/', headers=headers)
+    res = requests.get('https://www.insecam.org/en/bycountry/JP/', headers=headers)
     findpage = re.findall('"?page=",\s\d+', res.text)[1]
     rfindpage = findpage.replace('page=", ', '')
     os.system('clear')
@@ -40,7 +40,7 @@ def indonesia():
 def run():
     try:
         page = input("\033[1;31m       [ \033[1;37mPage \033[1;31m]\033[1;37m> ")
-        url = ("https://www.insecam.org/en/bycountry/ID/?page="+str(page))
+        url = ("https://www.insecam.org/en/bycountry/JP/?page="+str(page))
         print ""
         res = requests.get(url, headers=headers)
         findip = re.findall('http://\d+.\d+.\d+.\d+:\d+', res.text)
