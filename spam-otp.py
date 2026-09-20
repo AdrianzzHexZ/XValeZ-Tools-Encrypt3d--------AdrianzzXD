@@ -181,7 +181,7 @@ def execute():
         raise
 
 
-EXPECTED_LOADER_NAME = 'spam-otp_enc.py'
+EXPECTED_LOADER_NAME = 'spam-otp.py'
 
 
 def main():
